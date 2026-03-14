@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Thxie — Homepage</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=JetBrains+Mono:400,500,600,700,800,900|Space+Grotesk:400,500,600,700,800,900&amp;subset=latin">
+    <link rel="stylesheet" href="css/tailwind/tailwind.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="shuffle-for-tailwind.png">
+</head>
+<body class="antialiased bg-body text-body font-body">
+    <div class="">
+                
+      <nav class="w-full border-b border-[var(--border)] bg-[var(--bg)]" data-navbar="">
+        <div class="max-w-4xl mx-auto px-6 py-4 flex items-center justify-between">
+          <a href="#" class="flex items-center gap-2 group">
+            <span class="w-8 h-8 bg-[var(--accent)] rounded flex items-center justify-center">
+              <svg class="w-4 h-4 text-[var(--bg)]" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+              </svg>
+            </span>
+            <span class="font-heading text-xl font-bold text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">Thxie</span>
+          </a>
+          <div class="hidden md:flex items-center gap-8">
+            <a href="#posts" class="text-sm text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors">文章</a>
+            <a href="#categories" class="text-sm text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors">分类</a>
+            <a href="#about" class="text-sm text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors">关于</a>
+          </div>
+          <div class="flex items-center gap-3">
+            <button class="cmd-k-trigger hidden md:flex items-center gap-2 px-3 py-1.5 text-xs text-[var(--fg-muted)] bg-[var(--bg-soft)] border border-[var(--border)] rounded-md hover:border-[var(--accent)] transition-colors">
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+              <span>搜索</span>
+              <kbd class="ml-2 px-1.5 py-0.5 text-[10px] bg-[var(--bg)] border border-[var(--border)] rounded">⌘K</kbd>
+            </button>
+            <button class="theme-toggle w-9 h-9 flex items-center justify-center rounded-md hover:bg-[var(--bg-soft)] transition-colors" aria-label="切换主题">
+              <svg class="w-5 h-5 text-[var(--fg-muted)] sun-icon" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                <circle cx="12" cy="12" r="5"></circle>
+                <path d="M12 1v2m0 18v2M4.22 4.22l1.42 1.42m12.72 12.72l1.42 1.42M1 12h2m18 0h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path>
+              </svg>
+              <svg class="w-5 h-5 text-[var(--fg-muted)] moon-icon hidden" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+              </svg>
+            </button>
+            <button class="mobile-menu-btn md:hidden w-9 h-9 flex items-center justify-center rounded-md hover:bg-[var(--bg-soft)] transition-colors">
+              <svg class="w-5 h-5 text-[var(--fg-muted)]" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="mobile-menu hidden md:hidden border-t border-[var(--border)] px-6 py-4 space-y-3">
+          <a href="#posts" class="block text-sm text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors">文章</a>
+          <a href="#categories" class="block text-sm text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors">分类</a>
+          <a href="#about" class="block text-sm text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors">关于</a>
+          <button class="cmd-k-trigger-mobile flex items-center gap-2 text-sm text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+            <span>搜索</span>
+          </button>
+        </div>
+      </nav>
+                
+      <section class="py-20 md:py-32 bg-[var(--bg)]">
+        <div class="max-w-4xl mx-auto px-6">
+          <div class="flex flex-col md:flex-row md:items-center gap-8 md:gap-16">
+            <div class="flex-1 space-y-6">
+              <div class="inline-flex items-center gap-2 px-3 py-1 bg-[var(--accent)]/10 border border-[var(--accent)]/20 rounded-full">
+                <span class="w-2 h-2 bg-[var(--green)] rounded-full animate-pulse"></span>
+                <span class="text-xs text-[var(--accent)]">正在探索 AI 的无限可能</span>
+              </div>
+              <h1 class="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-[var(--fg)] leading-tight">
+                <span>你好，我是</span>
+                <span class="text-[var(--accent)]"> Thxie</span>
+              </h1>
+              <p class="text-lg text-[var(--fg-muted)] leading-relaxed max-w-xl">一个热爱 AI 与极简主义的程序员。在这里分享我的技术思考、开发经验与对未来的探索。代码是诗，简约即美。</p>
+              <div class="flex flex-wrap gap-3 pt-2">
+                <a href="#posts" class="inline-flex items-center gap-2 px-5 py-2.5 bg-[var(--accent)] text-[var(--bg)] text-sm font-medium rounded-md hover:opacity-90 transition-opacity">
+                  <span>阅读文章</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                  </svg>
+                </a>
+                <a href="#about" class="inline-flex items-center gap-2 px-5 py-2.5 border border-[var(--border)] text-[var(--fg)] text-sm font-medium rounded-md hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors">
+                  <span>了解更多</span>
+                </a>
+              </div>
+            </div>
+            <div class="hidden md:block w-48 h-48 relative">
+              <div class="absolute inset-0 bg-gradient-to-br from-[var(--accent)]/20 to-[var(--purple)]/20 rounded-full blur-3xl"></div>
+              <div class="relative w-full h-full border-2 border-[var(--border)] rounded-full overflow-hidden bg-[var(--bg-soft)]">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&amp;h=400&amp;fit=crop&amp;crop=face" alt="Thxie" class="w-full h-full object-cover opacity-90">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                
+      <section id="posts" class="py-16 md:py-24 bg-[var(--bg)]">
+        <div class="max-w-4xl mx-auto px-6">
+          <div class="flex items-center justify-between mb-12">
+            <h2 class="font-heading text-2xl md:text-3xl font-bold text-[var(--fg)]">最新文章</h2>
+            <a href="#" class="text-sm text-[var(--accent)] hover:underline underline-offset-4">查看全部 →</a>
+          </div>
+          <div class="space-y-1">
+            <article class="group py-6 border-b border-[var(--border)] hover:bg-[var(--bg-soft)]/50 -mx-4 px-4 rounded-lg transition-colors">
+              <a href="#article" class="block">
+                <div class="flex flex-col md:flex-row md:items-center gap-4">
+                  <div class="flex-1 min-w-0">
+                    <div class="flex flex-wrap items-center gap-2 mb-2">
+                      <span class="px-2 py-0.5 text-xs bg-[var(--blue)]/10 text-[var(--blue)] rounded">AI</span>
+                      <span class="px-2 py-0.5 text-xs bg-[var(--purple)]/10 text-[var(--purple)] rounded">LLM</span>
+                    </div>
+                    <h3 class="font-heading text-lg md:text-xl font-semibold text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors truncate">构建下一代 AI 应用：从 RAG 到 Agent 的演进之路</h3>
+                    <p class="mt-2 text-sm text-[var(--fg-muted)] line-clamp-2">探索大语言模型的实际应用，从检索增强生成到自主智能体，深入理解 AI 工程的核心范式转变...</p>
+                  </div>
+                  <div class="flex items-center gap-4 text-xs text-[var(--fg-muted)] md:text-right">
+                    <time>2026.01.15</time>
+                    <span class="hidden md:inline">·</span>
+                    <span class="hidden md:inline">8 分钟</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="group py-6 border-b border-[var(--border)] hover:bg-[var(--bg-soft)]/50 -mx-4 px-4 rounded-lg transition-colors">
+              <a href="#article" class="block">
+                <div class="flex flex-col md:flex-row md:items-center gap-4">
+                  <div class="flex-1 min-w-0">
+                    <div class="flex flex-wrap items-center gap-2 mb-2">
+                      <span class="px-2 py-0.5 text-xs bg-[var(--green)]/10 text-[var(--green)] rounded">前端</span>
+                      <span class="px-2 py-0.5 text-xs bg-[var(--aqua)]/10 text-[var(--aqua)] rounded">Next.js</span>
+                    </div>
+                    <h3 class="font-heading text-lg md:text-xl font-semibold text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors truncate">极简主义前端架构：用 Next.js 15 打造高性能博客</h3>
+                    <p class="mt-2 text-sm text-[var(--fg-muted)] line-clamp-2">从零开始设计一个极简主义博客系统，聚焦于性能优化、SEO 和卓越的阅读体验...</p>
+                  </div>
+                  <div class="flex items-center gap-4 text-xs text-[var(--fg-muted)] md:text-right">
+                    <time>2026.01.08</time>
+                    <span class="hidden md:inline">·</span>
+                    <span class="hidden md:inline">12 分钟</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+            <article class="group py-6 border-b border-[var(--border)] hover:bg-[var(--bg-soft)]/50 -mx-4 px-4 rounded-lg transition-colors">
+              <a href="#article" class="block">
+                <div class="flex flex-col md:flex-row md:items-center gap-4">
+                  <div class="flex-1 min-w-0">
+                    <div class="flex flex-wrap items-center gap-2 mb-2">
+                      <span class="px-2 py-0.5 text-xs bg-[var(--yellow)]/10 text-[var(--yellow)] rounded">效率</span>
+                      <span class="px-2 py-0.5 text-xs bg-[var(--orange)]/10 text-[var(--orange)] rounded">工具</span>
+                    </div>
+                    <h3 class="font-heading text-lg md:text-xl font-semibold text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors truncate">我的 2026 开发工具链：极简高效的工作流</h3>
+                    <p class="mt-2 text-sm text-[var(--fg-muted)] line-clamp-2">分享我日常使用的开发工具、终端配置和效率技巧，追求简约而不简单的开发体验...</p>
+                  </div>
+                  <div class="flex items-center gap-4 text-xs text-[var(--fg-muted)] md:text-right">
+                    <time>2025.12.28</time>
+                    <span class="hidden md:inline">·</span>
+                    <span class="hidden md:inline">6 分钟</span>
+                  </div>
+                </div>
+              </a>
+            </article>
+          </div>
+          <div class="mt-12 p-6 bg-[var(--bg-soft)] border border-[var(--border)] rounded-xl">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 bg-[var(--accent)]/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                <svg class="w-5 h-5 text-[var(--accent)]" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+              </div>
+              <div class="flex-1">
+                <div class="flex items-center gap-2 mb-2">
+                  <h4 class="font-heading font-semibold text-[var(--fg)]">AI 智能摘要</h4>
+                  <span class="px-1.5 py-0.5 text-[10px] bg-[var(--accent)]/20 text-[var(--accent)] rounded">Beta</span>
+                </div>
+                <p class="text-sm text-[var(--fg-muted)] leading-relaxed">本周文章主要探讨 AI 应用开发的最新范式，从传统的 RAG 架构到更自主的 Agent 系统。同时分享了 Next.js 15 的实践经验和开发效率提升技巧。推荐阅读关于 AI Agent 的深度解析。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                
+      <section id="about" class="py-16 md:py-24 bg-[var(--bg-soft)]">
+        <div class="max-w-4xl mx-auto px-6">
+          <div class="grid md:grid-cols-2 gap-12 md:gap-16">
+            <div class="space-y-6">
+              <h2 class="font-heading text-2xl md:text-3xl font-bold text-[var(--fg)]">关于我</h2>
+              <div class="prose prose-gruvbox">
+                <p class="text-[var(--fg-muted)] leading-relaxed">我是 Thxie，一名专注于 AI 与前端开发的程序员。相信技术应该服务于人，而非让人服务于技术。</p>
+                <p class="text-[var(--fg-muted)] leading-relaxed">极简主义不仅是我的设计理念，也是我的生活哲学。在代码中追求简洁优雅，在生活中追求本质体验。</p>
+                <p class="text-[var(--fg-muted)] leading-relaxed">目前正在探索大语言模型的工程化落地，希望通过这个博客记录我的思考与成长。</p>
+              </div>
+              <div class="flex gap-4 pt-4">
+                <a href="#" class="w-10 h-10 flex items-center justify-center border border-[var(--border)] rounded-md hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors text-[var(--fg-muted)]">
+                  <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
+                  </svg>
+                </a>
+                <a href="#" class="w-10 h-10 flex items-center justify-center border border-[var(--border)] rounded-md hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors text-[var(--fg-muted)]">
+                  <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
+                  </svg>
+                </a>
+                <a href="mailto:thxie@example.com" class="w-10 h-10 flex items-center justify-center border border-[var(--border)] rounded-md hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors text-[var(--fg-muted)]">
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="space-y-6">
+              <h3 class="font-heading text-lg font-semibold text-[var(--fg)]">分类</h3>
+              <div class="grid grid-cols-2 gap-3" id="categories">
+                <a href="#" class="group p-4 bg-[var(--bg)] border border-[var(--border)] rounded-lg hover:border-[var(--accent)] transition-colors">
+                  <div class="flex items-center gap-3">
+                    <span class="w-8 h-8 bg-[var(--blue)]/10 rounded flex items-center justify-center">
+                      <svg class="w-4 h-4 text-[var(--blue)]" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                      </svg>
+                    </span>
+                    <div>
+                      <p class="text-sm font-medium text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">AI</p>
+                      <p class="text-xs text-[var(--fg-muted)]">12 篇</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="group p-4 bg-[var(--bg)] border border-[var(--border)] rounded-lg hover:border-[var(--accent)] transition-colors">
+                  <div class="flex items-center gap-3">
+                    <span class="w-8 h-8 bg-[var(--green)]/10 rounded flex items-center justify-center">
+                      <svg class="w-4 h-4 text-[var(--green)]" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"></path>
+                      </svg>
+                    </span>
+                    <div>
+                      <p class="text-sm font-medium text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">前端</p>
+                      <p class="text-xs text-[var(--fg-muted)]">8 篇</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="group p-4 bg-[var(--bg)] border border-[var(--border)] rounded-lg hover:border-[var(--accent)] transition-colors">
+                  <div class="flex items-center gap-3">
+                    <span class="w-8 h-8 bg-[var(--yellow)]/10 rounded flex items-center justify-center">
+                      <svg class="w-4 h-4 text-[var(--yellow)]" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                      </svg>
+                    </span>
+                    <div>
+                      <p class="text-sm font-medium text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">生活</p>
+                      <p class="text-xs text-[var(--fg-muted)]">5 篇</p>
+                    </div>
+                  </div>
+                </a>
+                <a href="#" class="group p-4 bg-[var(--bg)] border border-[var(--border)] rounded-lg hover:border-[var(--accent)] transition-colors">
+                  <div class="flex items-center gap-3">
+                    <span class="w-8 h-8 bg-[var(--purple)]/10 rounded flex items-center justify-center">
+                      <svg class="w-4 h-4 text-[var(--purple)]" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                      </svg>
+                    </span>
+                    <div>
+                      <p class="text-sm font-medium text-[var(--fg)] group-hover:text-[var(--accent)] transition-colors">工具</p>
+                      <p class="text-xs text-[var(--fg-muted)]">6 篇</p>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <h3 class="font-heading text-lg font-semibold text-[var(--fg)] pt-4">标签</h3>
+              <div class="flex flex-wrap gap-2">
+                <a href="#" class="px-3 py-1 text-xs text-[var(--fg-muted)] bg-[var(--bg)] border border-[var(--border)] rounded-full hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors">#LLM</a>
+                <a href="#" class="px-3 py-1 text-xs text-[var(--fg-muted)] bg-[var(--bg)] border border-[var(--border)] rounded-full hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors">#React</a>
+                <a href="#" class="px-3 py-1 text-xs text-[var(--fg-muted)] bg-[var(--bg)] border border-[var(--border)] rounded-full hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors">#极简主义</a>
+                <a href="#" class="px-3 py-1 text-xs text-[var(--fg-muted)] bg-[var(--bg)] border border-[var(--border)] rounded-full hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors">#TypeScript</a>
+                <a href="#" class="px-3 py-1 text-xs text-[var(--fg-muted)] bg-[var(--bg)] border border-[var(--border)] rounded-full hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors">#开源</a>
+                <a href="#" class="px-3 py-1 text-xs text-[var(--fg-muted)] bg-[var(--bg)] border border-[var(--border)] rounded-full hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors">#Prompt</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+                
+      <div class="cmd-k-modal fixed inset-0 z-50 hidden" role="dialog" aria-modal="true">
+        <div class="cmd-k-backdrop absolute inset-0 bg-black/60 backdrop-blur-sm"></div>
+        <div class="absolute inset-0 flex items-start justify-center pt-[15vh] px-4">
+          <div class="cmd-k-content w-full max-w-xl bg-[var(--bg)] border border-[var(--border)] rounded-xl shadow-2xl overflow-hidden">
+            <div class="flex items-center gap-3 px-4 py-3 border-b border-[var(--border)]">
+              <svg class="w-5 h-5 text-[var(--fg-muted)]" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+              </svg>
+              <input type="text" class="cmd-k-input flex-1 bg-transparent text-[var(--fg)] placeholder-[var(--fg-muted)] outline-none" placeholder="搜索文章、分类、标签...">
+              <kbd class="px-2 py-1 text-xs text-[var(--fg-muted)] bg-[var(--bg-soft)] border border-[var(--border)] rounded">ESC</kbd>
+            </div>
+            <div class="max-h-80 overflow-y-auto">
+              <div class="cmd-k-results p-2">
+                <div class="px-3 py-2 text-xs text-[var(--fg-muted)] uppercase tracking-wider">快速跳转</div>
+                <a href="#posts" class="cmd-k-item flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[var(--bg-soft)] transition-colors cursor-pointer">
+                  <svg class="w-4 h-4 text-[var(--fg-muted)]" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                  </svg>
+                  <span class="text-sm text-[var(--fg)]">所有文章</span>
+                </a>
+                <a href="#categories" class="cmd-k-item flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[var(--bg-soft)] transition-colors cursor-pointer">
+                  <svg class="w-4 h-4 text-[var(--fg-muted)]" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path>
+                  </svg>
+                  <span class="text-sm text-[var(--fg)]">分类</span>
+                </a>
+                <a href="#about" class="cmd-k-item flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[var(--bg-soft)] transition-colors cursor-pointer">
+                  <svg class="w-4 h-4 text-[var(--fg-muted)]" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                  </svg>
+                  <span class="text-sm text-[var(--fg)]">关于我</span>
+                </a>
+                <div class="px-3 py-2 text-xs text-[var(--fg-muted)] uppercase tracking-wider mt-2">最近文章</div>
+                <a href="#article" class="cmd-k-item flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[var(--bg-soft)] transition-colors cursor-pointer">
+                  <span class="w-2 h-2 bg-[var(--blue)] rounded-full"></span>
+                  <span class="text-sm text-[var(--fg)]">构建下一代 AI 应用：从 RAG 到 Agent</span>
+                </a>
+                <a href="#article" class="cmd-k-item flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-[var(--bg-soft)] transition-colors cursor-pointer">
+                  <span class="w-2 h-2 bg-[var(--green)] rounded-full"></span>
+                  <span class="text-sm text-[var(--fg)]">极简主义前端架构</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+                
+      <footer class="py-12 bg-[var(--bg)] border-t border-[var(--border)]">
+        <div class="max-w-4xl mx-auto px-6">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+            <div class="flex items-center gap-2">
+              <span class="w-6 h-6 bg-[var(--accent)] rounded flex items-center justify-center">
+                <svg class="w-3 h-3 text-[var(--bg)]" fill="none" stroke="currentColor" viewbox="0 0 24 24" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                </svg>
+              </span>
+              <span class="text-sm text-[var(--fg-muted)]">© 2026 Thxie. 极简即美。</span>
+            </div>
+            <div class="flex items-center gap-6">
+              <a href="#" class="text-xs text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors">RSS</a>
+              <a href="#" class="text-xs text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors">GitHub</a>
+              <a href="#" class="text-xs text-[var(--fg-muted)] hover:text-[var(--accent)] transition-colors">Twitter</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script type="text/javascript" src="js/global-27570.js?v=1773508237"></script>
+</body>
+</html>
+
